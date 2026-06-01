@@ -271,6 +271,61 @@
   .phase-text h5 { font-size: 14px; font-weight: 700; color: #fff; }
   .phase-text p { font-size: 12px; color: #888; margin-top: 3px; line-height: 1.5; }
 
+  /* ── 补剂时间轴 ── */
+  .supp-timeline {
+    display: flex; flex-direction: column; gap: 0;
+    margin-top: 12px;
+    border-left: 3px solid #2a2a3e;
+    padding-left: 0;
+  }
+  .tl-block {
+    position: relative;
+    padding: 16px 16px 16px 28px;
+    border-bottom: 1px solid #1e1e2e;
+  }
+  .tl-block::before {
+    content: '';
+    position: absolute; left: -8px; top: 20px;
+    width: 13px; height: 13px;
+    background: #2a2a3e; border: 2px solid #4a4a6e;
+    border-radius: 50%;
+  }
+  .tl-workout-pre::before  { background: #1a3a20; border-color: #4caf7d; }
+  .tl-workout-mid::before  { background: #3a1a10; border-color: #ff6b35; }
+  .tl-workout-post::before { background: #1a2a3a; border-color: #5090e0; }
+  .tl-sleep::before        { background: #1a1a3a; border-color: #9090e0; }
+
+  .tl-time {
+    font-size: 13px; font-weight: 700; color: #ccc;
+    margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .tl-hint {
+    font-size: 11px; font-weight: 400; color: #666; margin-left: 6px;
+  }
+  .tl-items {
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .tl-item {
+    background: #1a1a2a; border: 1px solid #2a2a3e;
+    border-radius: 10px; padding: 8px 12px;
+    min-width: 180px; flex: 1;
+  }
+  .tl-pill {
+    font-size: 13px; font-weight: 700; color: #e0e0e0;
+    margin-bottom: 4px;
+  }
+  .tl-detail {
+    font-size: 11px; color: #666; line-height: 1.5;
+  }
+  .pill-workout { color: #4caf7d; }
+  .pill-post    { color: #5090e0; }
+  .pill-sleep   { color: #9090e0; }
+
+  .tl-workout-pre  { background: #0e1a12; }
+  .tl-workout-mid  { background: #1a1008; }
+  .tl-workout-post { background: #0a1020; }
+  .tl-sleep        { background: #0e0e1a; }
+
   @media (max-width: 600px) {
     .week-grid { grid-template-columns: repeat(4, 1fr); }
     .macro-grid { grid-template-columns: repeat(3, 1fr); }
@@ -278,4 +333,5 @@
     .arm-overview { grid-template-columns: 1fr; }
     .meal-macros { display: none; }
     header h1 { font-size: 20px; }
+    .tl-item { min-width: 100%; }
   }
