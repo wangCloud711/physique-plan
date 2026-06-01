@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>健体大赛完整备赛计划</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>🏆 健体大赛完整备赛计划</h1>
+  <p>35岁 · 身高180cm · 体重84kg · 体脂率17〜20% → 目标：登上赛场</p>
+</header>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-value">每周5次</div><div class="stat-label">力量训练</div></div>
+  <div class="stat"><div class="stat-value">每周4次</div><div class="stat-label">有氧运动</div></div>
+  <div class="stat"><div class="stat-value">2100 kcal</div><div class="stat-label">每日热量目标</div></div>
+  <div class="stat"><div class="stat-value">168g</div><div class="stat-label">每日蛋白质目标</div></div>
+  <div class="stat"><div class="stat-value">12〜18个月</div><div class="stat-label">目标备赛周期</div></div>
+</div>
+
+<div class="alert-banner">
+  <div class="alert-icon">⚠️</div>
+  <div><strong>肘部疼痛提示：</strong>鹰嘴处持续疼痛可能是肱三头肌肌腱炎，建议尽早前往骨科或运动医学科检查，排除肌腱撕裂或骨刺。以下训练调整建议无法替代专业医疗诊断，疼痛加剧时请立即停止训练。</div>
+</div>
+
+<div class="nav-group">
+  <div class="nav-label">🏋️ 训练计划</div>
+  <div class="tabs">
+    <div class="tab active" onclick="showPanel('weekly', this)">周计划总览</div>
+    <div class="tab" onclick="showPanel('mon', this)">周一（胸·三头）</div>
+    <div class="tab" onclick="showPanel('tue', this)">周二（背·二头）</div>
+    <div class="tab" onclick="showPanel('wed', this)">周三（肩部）</div>
+    <div class="tab" onclick="showPanel('thu', this)">周四（休息日）</div>
+    <div class="tab" onclick="showPanel('fri', this)">周五（手臂专项）</div>
+    <div class="tab" onclick="showPanel('sat', this)">周六（腿部）</div>
+  </div>
+  <div class="nav-label" style="margin-top:4px;">💪 专项改善</div>
+  <div class="tabs">
+    <div class="tab arm-tab" onclick="showPanel('arm', this)">手臂 & 三头专项</div>
+    <div class="tab arm-tab" onclick="showPanel('elbow', this)">肘部康复指南</div>
+  </div>
+  <div class="nav-label" style="margin-top:4px;">🥗 饮食 & 补剂</div>
+  <div class="tabs">
+    <div class="tab diet-tab" onclick="showPanel('diet', this)">每日饮食计划</div>
+    <div class="tab diet-tab" onclick="showPanel('supps', this)">补剂指南</div>
+    <div class="tab diet-tab" onclick="showPanel('phases', this)">备赛路线图</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- 周计划总览 -->
+  <div class="panel active" id="panel-weekly">
+    <div class="week-grid">
+      <div class="week-cell">
+        <div class="wday">周一</div>
+        <div class="wpart">胸部<br>三头肌</div>
+        <div class="wcardio">有氧 30分钟</div>
+      </div>
+      <div class="week-cell">
+        <div class="wday">周二</div>
+        <div class="wpart">背部<br>二头肌</div>
+        <div class="wcardio">有氧 30分钟</div>
+      </div>
+      <div class="week-cell">
+        <div class="wday">周三</div>
+        <div class="wpart">肩部</div>
+        <div class="wcardio">有氧 30分钟</div>
+      </div>
+      <div class="week-cell rest-day">
+        <div class="wday">周四</div>
+        <div class="wpart">休息日</div>
+      </div>
+      <div class="week-cell">
+        <div class="wday">周五</div>
+        <div class="wpart">手臂专项<br>腹肌</div>
+      </div>
+      <div class="week-cell">
+        <div class="wday">周六</div>
+        <div class="wpart">腿部</div>
+        <div class="wcardio">有氧 30分钟</div>
+      </div>
+      <div class="week-cell rest-day">
+        <div class="wday">周日</div>
+        <div class="wpart">完全休息</div>
+      </div>
+    </div>
+    <div class="tip-box orange">
+      <strong>本次计划调整说明：</strong>针对三头肌薄弱和手臂围度小的问题，周五改为「手臂专项日」，大幅增加三头肌和二头肌的训练量。同时所有涉及卧推的动作均加入肘部保护调整。
+    </div>
+    <div class="tip-box">
+      <strong>健体赛重点部位：</strong>肩宽、背阔肌、腹肌是评分最关键的三个要素。手臂围度虽然不是主评项，但整体视觉平衡感很重要。
+    </div>
+  </div>
+
+  <!-- 周一：胸·三头 -->
+  <div class="panel" id="panel-mon">
+    <div class="day-card open">
+      <div class="day-header" onclick="toggleCard(this)">
+        <div class="day-badge" style="background:#e94560;color:#fff;">周一</div>
+        <div class="day-info"><h3>胸部 · 三头肌</h3><p>预计时长：75〜85分钟 + 有氧30分钟</p></div>
+        <div class="day-toggle">▼</div>
+      </div>
+      <div class="day-body">
+        <div class="tip-box warning">
+          <strong>⚠️ 肘部疼痛调整：</strong>暂时以上斜哑铃卧推替代平板杠铃卧推作为主要动作。哑铃允许手腕自由旋转，对肘关节压力更小。同时将肘部外展角度从"T字型"调整为与躯干呈45〜60度夹角。
+        </div>
+        <div class="section-title">胸部训练（肘部友好版）</div>
+        <table class="exercise-table">
+          <tr><th>动作</th><th>组数×次数</th><th>要点</th></tr>
+          <tr>
+            <td><div class="exercise-name">上斜哑铃卧推（主要动作）</div><div class="exercise-note">替代平板杠铃卧推，肘关节压力更小</div></td>
+            <td><span class="sets-badge">4×8〜10</span></td>
+            <td class="reps-text">肘部与躯干呈45〜60度，不要完全外展</td>
+          </tr>
+          <tr>
+            <td><div class="exercise-name">平板哑铃卧推</div><div class="exercise-note">用哑铃替代杠铃，减少肘部固定压力</div></td>
+            <td><span class="sets-badge">3×10〜12</span></td>
+            <td class="reps-text">感受疼痛立即停止，以无痛范围为准</td>
+          </tr>
+          <tr>
+            <td><div class="exercise-name">绳索飞鸟 / 蝴蝶机夹胸</div><div class="exercise-note">孤立胸肌，肘部几乎无压力</div></td>
+            <td><span class="sets-badge">3×12〜15</span></td>
+            <td class="reps-text">重点感受胸肌收缩</td>
+          </tr>
+        </table>
+        <div class="section-title arm-color">三头肌强化（增加训练量）</div>
+        <table class="exercise-table">
+          <tr><th>动作</th><th>组数×次数</th><th>要点</th></tr>
+          <tr>
+            <td><div class="exercise-name">绳索下压（直杆 or V杆）</div><div class="exercise-note">三头肌主力动作，肘部最安全</div></td>
+            <td><span class="sets-badge arm">4×12〜15</span></td>
+            <td class="reps-text">固定肘关节不动，只伸展前臂</td>
+          </tr>
+          <tr>
+            <td><div class="exercise-name">单臂绳索下压</div><div class="exercise-note">修正左右不平衡</div></td>
+            <td><span class="sets-badge arm">3×12〜15</span></td>
+            <td class="reps-text">单侧训练，感受收缩更清晰</td>
+          </tr>
+          <tr>
+            <td><div class="exercise-name">哑铃过头臂屈伸（单臂）</div><div class="exercise-note">三头长头，增加手臂围度的关键</div></td>
+            <td><span class="sets-badge arm">3×12〜15</span></td>
+            <td class="reps-text">动作慢，注意肘部是否疼痛</td>
+          </tr>
+        </table>
+        <div class="cardio-session">🏃 训练后：低强度有氧30〜40分钟（骑车或快走）</div>
+        <div class="tip-box warning"><strong>暂时避免：</strong>双杠臂屈伸（Dips）对鹰嘴压力极大，肘部康复前请完全停止。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 周二：背·二头 -->
+  <div class="panel" id="panel-tue">
+    <div class="day-card open">
+      <div class="day-header" onclick="toggleCard(this)">
+        <div class="day-badge" style="background:#0f3460;color:#fff;">周二</div>
+        <div class="day-info"><h3>背部 · 二头肌</h3><p>预计时长：70〜80分钟 + 有氧30分钟</p></div>
+        <div class="day-toggle">▼</div>
+      </div>
+      <div class="day-body">
+        <table class="exercise-table">
+          <tr><th>动作</th><th>组数×次数</th><th>要点</th></tr>
+          <tr><td><div class="exercise-name">引体向上</div><div class="exercise-note">背阔肌 · 健体最重要动作</div></td><td><span class="sets-badge">4×6〜10</span></td><td class="reps-text">宽握距，下沉肩胛骨后发力上拉</td></tr>
+          <tr><td><div class="exercise-name">杠铃划船</div><div class="exercise-note">背部厚度</div></td><td><span class="sets-badge">4×8〜10</span></td><td class="reps-text">上体45度，用肘向后拉</td></tr>
+          <tr><td><div class="exercise-name">坐姿绳索划船</div><div class="exercise-note">背阔肌收缩</div></td><td><span class="sets-badge">3×12〜15</span></td><td class="reps-text">从充分拉伸到完全收缩，动作要慢</td></tr>
+          <tr><td><div class="exercise-name">高位下拉</div><div class="exercise-note">背阔肌宽度</div></td><td><span class="sets-badge">3×10〜12</span></td><td class="reps-text">宽握距，拉至胸口位置</td></tr>
+          <tr><td><div class="exercise-name">哑铃锤式弯举</div><div class="exercise-note">二头肌 + 肱肌，增加手臂厚度</div></td><td><span class="sets-badge arm">3×10〜12</span></td><td class="reps-text">中立握（拇指朝上），对肘关节友好</td></tr>
+          <tr><td><div class="exercise-name">绳索弯举</div><div class="exercise-note">二头肌全程张力</div></td><td><span class="sets-badge arm">3×12〜15</span></td><td class="reps-text">比杠铃弯举对肘关节压力更小</td></tr>
+        </table>
+        <div class="cardio-session">🏃 训练后：低强度有氧30〜40分钟（骑车或快走）</div>
+        <div class="tip-box"><strong>今日重点：</strong>背阔肌的宽度决定健体的倒三角轮廓。引体向上请用心感受背阔肌发力，不靠手臂的力量拉。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 周三：肩部 -->
+  <div class="panel" id="panel-wed">
+    <div class="day-card open">
+      <div class="day-header" onclick="toggleCard(this)">
+        <div class="day-badge" style="background:#533483;color:#fff;">周三</div>
+        <div class="day-info"><h3>肩部（三角肌全头）</h3><p>预计时长：60〜75分钟 + 有氧30分钟</p></div>
+        <div class="day-toggle">▼</div>
+      </div>
+      <div class="day-body">
+        <table class="exercise-table">
+          <tr><th>动作</th><th>组数×次数</th><th>要点</th></tr>
+          <tr><td><div class="exercise-name">哑铃肩上推举</div><div class="exercise-note">三角肌整体 · 主要动作</div></td><td><span class="sets-badge">4×8〜10</span></td><td class="reps-text">从肘与肩同高位置发力上推</td></tr>
+          <tr><td><div class="exercise-name">哑铃侧平举</div><div class="exercise-note">三角肌中束 · 肩宽核心动作</div></td><td><span class="sets-badge">4×15〜20</span></td><td class="reps-text">重量轻、动作标准，小指朝上</td></tr>
+          <tr><td><div class="exercise-name">绳索侧平举</div><div class="exercise-note">持续刺激中束</div></td><td><span class="sets-badge">3×15〜20</span></td><td class="reps-text">单侧交替，张力更稳定</td></tr>
+          <tr><td><div class="exercise-name">俯身哑铃飞鸟（后束）</div><div class="exercise-note">三角肌后束 · 改善体态</div></td><td><span class="sets-badge">4×15〜20</span></td><td class="reps-text">微屈肘，向两侧展开</td></tr>
+          <tr><td><div class="exercise-name">绳索面拉（Face Pull）</div><div class="exercise-note">后束 + 肘关节健康维护</div></td><td><span class="sets-badge">3×15〜20</span></td><td class="reps-text">对保护肩关节和肘关节都有效</td></tr>
+        </table>
+        <div class="cardio-session">🏃 训练后：低强度有氧30〜40分钟（骑车或快走）</div>
+        <div class="tip-box"><strong>今日重点：</strong>肩宽是健体评分最重要指标。侧平举宁可重量轻，也要动作标准、感受收缩。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 周四：休息日 -->
+  <div class="panel" id="panel-thu">
+    <div style="background:#111;border:1px solid #2a2a2a;border-radius:14px;padding:40px;text-align:center;">
+      <div style="font-size:48px;margin-bottom:16px;">😴</div>
+      <h3 style="font-size:20px;font-weight:700;color:#fff;margin-bottom:10px;">周四 · 休息日</h3>
+      <p style="color:#888;font-size:14px;line-height:1.8;">完全休息，让身体充分恢复。<br>腿部训练已移至<strong style="color:#4caf7d;">周六</strong>进行。</p>
+    </div>
+    <div class="tip-box" style="margin-top:16px;">
+      <strong>休息日的意义：</strong>肌肉的生长发生在休息期间，而不是训练期间。周四休息可以保证周五手臂专项和周六腿部训练时有充足的体力，训练质量更高。
+    </div>
+  </div>
+
+  <!-- 周五：手臂专项 -->
+  <div class="panel" id="panel-fri">
+    <div class="day-card open">
+      <div class="day-header" onclick="toggleCard(this)">
+        <div class="day-badge" style="background:#b07000;color:#fff;">周五</div>
+        <div class="day-info"><h3>手臂专项 + 腹肌</h3><p>预计时长：65〜75分钟（无有氧 · 专注手臂围度）</p></div>
+        <div class="day-toggle">▼</div>
+      </div>
+      <div class="day-body">
+        <div class="tip-box orange"><strong>本日目标：</strong>三头肌占上臂体积约2/3，是增加手臂围度的关键。本日大量训练三头肌，同时二头肌做充分的孤立训练，每组都要感受到肌肉的充血感。</div>
+
+        <div class="section-title arm-color">三头肌专项（本日重点）</div>
+        <table class="exercise-table">
+          <tr><th>动作</th><th>组数×次数</th><th>要点</th></tr>
+          <tr>
+            <td><div class="exercise-name">绳索下压（直杆）</div><div class="exercise-note">三头肌外侧头 · 热身兼主力</div></td>
+            <td><span class="sets-badge arm">4×12〜15</span></td>
+            <td class="reps-text">肘部固定贴近身体，完全伸展后收缩1秒</td>
+          </tr>
+          <tr>
+            <td><div class="exercise-name">俯身哑铃臂屈伸（Kickback）</div><div class="exercise-note">三头肌收缩感极强</div></td>
+            <td><span class="sets-badge arm">3×15〜20</span></td>
+            <td class="reps-text">上臂与地面平行，只动前臂</td>
+          </tr>
+          <tr>
+            <td><div class="exercise-name">绳索过头臂屈伸</div><div class="exercise-note">三头长头 · 增加手臂厚度的关键</div></td>
+            <td><span class="sets-badge arm">4×12〜15</span></td>
+            <td class="reps-text">充分拉伸长头，动作幅度要大</td>
+          </tr>
+          <tr>
+            <td><div class="exercise-name">窄距哑铃卧推</div><div class="exercise-note">三头肌复合动作，比窄距杠铃卧推更安全</div></td>
+            <td><span class="sets-badge arm">3×10〜12</span></td>
+            <td class="reps-text">两哑铃并拢，肘部贴近躯干下放</td>
+          </tr>
+        </table>
+
+        <div class="section-title arm-color">二头肌专项</div>
+        <table class="exercise-table">
+          <tr><th>动作</th><th>组数×次数</th><th>要点</th></tr>
+          <tr>
+            <td><div class="exercise-name">哑铃弯举（交替）</div><div class="exercise-note">二头肌主力动作</div></td>
+            <td><span class="sets-badge arm">4×10〜12</span></td>
+            <td class="reps-text">顶端旋转小臂（旋后）以充分收缩</td>
+          </tr>
+          <tr>
+            <td><div class="exercise-name">斜板弯举（Scott Curl）</div><div class="exercise-note">消除借力，孤立二头肌</div></td>
+            <td><span class="sets-badge arm">3×10〜12</span></td>
+            <td class="reps-text">下放到底部充分拉伸，不要锁死</td>
+          </tr>
+          <tr>
+            <td><div class="exercise-name">绳索弯举</div><div class="exercise-note">全程张力，收尾动作</div></td>
+            <td><span class="sets-badge arm">3×12〜15</span></td>
+            <td class="reps-text">慢速下放，感受离心收缩</td>
+          </tr>
+        </table>
+
+        <div class="section-title">腹肌训练</div>
+        <table class="exercise-table">
+          <tr><th>动作</th><th>组数×次数</th><th>要点</th></tr>
+          <tr><td><div class="exercise-name">卷腹 / 仰卧起坐</div><div class="exercise-note">腹直肌上部</div></td><td><span class="sets-badge">3×20〜25</span></td><td class="reps-text">腰部不要离地，专注腹部收缩</td></tr>
+          <tr><td><div class="exercise-name">悬挂举腿</div><div class="exercise-note">腹直肌下部</div></td><td><span class="sets-badge">3×15〜20</span></td><td class="reps-text">注意腰部不要过度反弓</td></tr>
+          <tr><td><div class="exercise-name">平板支撑</div><div class="exercise-note">核心稳定性</div></td><td><span class="sets-badge">3×45〜60秒</span></td><td class="reps-text">收腹保持全身稳定</td></tr>
+          <tr><td><div class="exercise-name">俄罗斯转体</div><div class="exercise-note">腹斜肌 · 收腰</div></td><td><span class="sets-badge">3×20次（左右各）</span></td><td class="reps-text">脚抬离地面可增加强度</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 周六：腿部 -->
+  <div class="panel" id="panel-sat">
+    <div class="day-card open">
+      <div class="day-header" onclick="toggleCard(this)">
+        <div class="day-badge" style="background:#1a6b3a;color:#fff;">周六</div>
+        <div class="day-info"><h3>腿部（股四头肌 · 腘绳肌 · 臀部）</h3><p>预计时长：70〜80分钟 + 有氧30分钟</p></div>
+        <div class="day-toggle">▼</div>
+      </div>
+      <div class="day-body">
+        <table class="exercise-table">
+          <tr><th>动作</th><th>组数×次数</th><th>要点</th></tr>
+          <tr><td><div class="exercise-name">杠铃深蹲</div><div class="exercise-note">下肢全面 · 主要复合动作</div></td><td><span class="sets-badge">4×6〜8</span></td><td class="reps-text">蹲至平行或稍低，膝盖对准脚尖</td></tr>
+          <tr><td><div class="exercise-name">腿举机</div><div class="exercise-note">股四头肌 · 追加训练量</div></td><td><span class="sets-badge">4×10〜12</span></td><td class="reps-text">膝盖不要完全锁死伸直</td></tr>
+          <tr><td><div class="exercise-name">腿屈伸</div><div class="exercise-note">股四头肌收尾动作</div></td><td><span class="sets-badge">3×15〜20</span></td><td class="reps-text">收缩位保持1秒</td></tr>
+          <tr><td><div class="exercise-name">罗马尼亚硬拉</div><div class="exercise-note">腘绳肌 · 臀部</div></td><td><span class="sets-badge">4×10〜12</span></td><td class="reps-text">保持背部平直，从髋关节铰链发力</td></tr>
+          <tr><td><div class="exercise-name">腿弯举</div><div class="exercise-note">腘绳肌收尾</div></td><td><span class="sets-badge">3×12〜15</span></td><td class="reps-text">下放时慢速离心，感受拉伸</td></tr>
+          <tr><td><div class="exercise-name">提踵</div><div class="exercise-note">腓肠肌</div></td><td><span class="sets-badge">4×20〜25</span></td><td class="reps-text">充分下沉拉伸后再完全收缩</td></tr>
+        </table>
+        <div class="cardio-session">🏃 训练后：低强度有氧30〜40分钟（骑车推荐，腿部疲劳时可缩短至20分钟）</div>
+        <div class="tip-box"><strong>今日重点：</strong>深蹲是本周最消耗体力的动作。周六有充足的休息（周四休息日），体力应该比较充沛，可以冲击重量。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 手臂专项说明 -->
+  <div class="panel" id="panel-arm">
+    <div class="arm-overview">
+      <div class="arm-card">
+        <h4>💪 为什么手臂看起来细？</h4>
+        <p>上臂由三头肌（约占2/3体积）和二头肌（约占1/3）构成。三头肌薄弱是手臂围度小的最直接原因。需要显著增加三头肌的每周训练量和动作多样性。</p>
+      </div>
+      <div class="arm-card">
+        <h4>📈 增加手臂围度的策略</h4>
+        <p>将周五改为手臂专项日，三头肌每周总组数从约9组增加到约20组。同时在周一胸部训练中加强三头肌。二头肌在周二和周五各做一次，保证充分刺激。</p>
+      </div>
+    </div>
+
+    <div class="day-card open">
+      <div class="day-header" onclick="toggleCard(this)">
+        <div class="day-badge" style="background:#c07010;color:#fff;">三头</div>
+        <div class="day-info"><h3>三头肌 · 每周训练量分配</h3><p>目标：每周总组数约20组，分散在两天</p></div>
+        <div class="day-toggle">▼</div>
+      </div>
+      <div class="day-body">
+        <table class="exercise-table">
+          <tr><th>训练日</th><th>动作</th><th>组数</th></tr>
+          <tr><td class="reps-text">周一（胸·三头）</td><td><div class="exercise-name">绳索下压 + 单臂绳索下压 + 过头臂屈伸</div></td><td><span class="sets-badge arm">10组</span></td></tr>
+          <tr><td class="reps-text">周五（手臂专项）</td><td><div class="exercise-name">绳索下压 + Kickback + 绳索过头 + 窄距哑铃卧推</div></td><td><span class="sets-badge arm">14组</span></td></tr>
+          <tr><td class="reps-text">每周合计</td><td><div class="exercise-name">约24组</div></td><td><span class="sets-badge arm">↑ 大幅增加</span></td></tr>
+        </table>
+        <div class="tip-box orange"><strong>三头肌训练的核心原则：</strong>肘部固定不动、只动前臂是所有三头肌动作的关键。重量不需要很大，感受到灼烧感（pump）才是有效训练的标志。</div>
+      </div>
+    </div>
+
+    <div class="day-card open">
+      <div class="day-header" onclick="toggleCard(this)">
+        <div class="day-badge" style="background:#c07010;color:#fff;">二头</div>
+        <div class="day-info"><h3>二头肌 · 围度提升重点动作</h3><p>每周两天，总组数约18组</p></div>
+        <div class="day-toggle">▼</div>
+      </div>
+      <div class="day-body">
+        <table class="exercise-table">
+          <tr><th>动作</th><th>作用</th><th>推荐组数</th></tr>
+          <tr><td><div class="exercise-name">哑铃交替弯举</div><div class="exercise-note">顶端旋后以充分收缩</div></td><td class="reps-text">整体质量 + 峰值收缩</td><td><span class="sets-badge arm">4组</span></td></tr>
+          <tr><td><div class="exercise-name">斜板弯举（Scott Curl）</div><div class="exercise-note">彻底消除借力</div></td><td class="reps-text">孤立刺激，最大化泵感</td><td><span class="sets-badge arm">3组</span></td></tr>
+          <tr><td><div class="exercise-name">哑铃锤式弯举</div><div class="exercise-note">中立握</div></td><td class="reps-text">刺激肱肌，增加手臂厚度</td><td><span class="sets-badge arm">3组</span></td></tr>
+          <tr><td><div class="exercise-name">绳索弯举</div><div class="exercise-note">全程张力</div></td><td class="reps-text">离心收缩，增加肌肉损伤</td><td><span class="sets-badge arm">3组</span></td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 肘部康复指南 -->
+  <div class="panel" id="panel-elbow">
+    <div class="elbow-card">
+      <h4>🦴 鹰嘴疼痛的原因与机制</h4>
+      <div class="elbow-step">
+        <div class="elbow-num">①</div>
+        <div class="elbow-text">
+          <h5>最可能的诊断：肱三头肌肌腱炎</h5>
+          <p>鹰嘴（肘关节后方突起）是三头肌肌腱的附着点。卧推时三头肌全程承受负荷，导致肌腱持续受力摩擦，引发炎症。全程疼痛符合慢性肌腱炎的特征。</p>
+        </div>
+      </div>
+      <div class="elbow-step">
+        <div class="elbow-num">②</div>
+        <div class="elbow-text">
+          <h5>诱发因素</h5>
+          <p>肘部外展角度过大（"T字型"卧推）、握距过宽、三头肌训练量骤增、热身不足，都会加剧肌腱的压力。</p>
+        </div>
+      </div>
+      <div class="elbow-step">
+        <div class="elbow-num">③</div>
+        <div class="elbow-text">
+          <h5>⚠️ 请先就医</h5>
+          <p>持续训练中都疼痛属于需要关注的症状。建议先做一次骨科或运动医学科检查，排除鹰嘴滑囊炎、肌腱撕裂或骨刺等问题，再根据医生建议调整训练。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card open">
+      <div class="day-header" onclick="toggleCard(this)">
+        <div class="day-badge" style="background:#8a3a10;color:#fff;">调整</div>
+        <div class="day-info"><h3>训练动作调整方案</h3><p>在康复期间保护肘关节的训练策略</p></div>
+        <div class="day-toggle">▼</div>
+      </div>
+      <div class="day-body">
+        <div class="section-title rehab-color">立即停止的动作</div>
+        <table class="exercise-table">
+          <tr><th>动作</th><th>原因</th><th>替代方案</th></tr>
+          <tr><td><div class="exercise-name">❌ 平板杠铃卧推</div></td><td class="reps-text">固定握距，肘关节无法自由旋转，压力集中</td><td class="reps-text">→ 哑铃卧推 / 上斜哑铃卧推</td></tr>
+          <tr><td><div class="exercise-name">❌ 双杠臂屈伸（Dips）</div></td><td class="reps-text">鹰嘴承受最大压力的动作，必须停止</td><td class="reps-text">→ 绳索下压 / 俯身Kickback</td></tr>
+          <tr><td><div class="exercise-name">❌ 窄距杠铃卧推</div></td><td class="reps-text">肘关节内扣，肌腱压力极大</td><td class="reps-text">→ 窄距哑铃卧推</td></tr>
+        </table>
+
+        <div class="section-title rehab-color">推荐替代动作（肘部友好）</div>
+        <table class="exercise-table">
+          <tr><th>动作</th><th>组数×次数</th><th>原因</th></tr>
+          <tr><td><div class="exercise-name">绳索下压</div><div class="exercise-note">直杆 or V杆</div></td><td><span class="sets-badge rehab">4×15</span></td><td class="reps-text">肘关节受力最小的三头肌动作</td></tr>
+          <tr><td><div class="exercise-name">俯身哑铃Kickback</div></td><td><span class="sets-badge rehab">3×15〜20</span></td><td class="reps-text">无轴向压力，鹰嘴基本不受压</td></tr>
+          <tr><td><div class="exercise-name">哑铃卧推（替代杠铃）</div></td><td><span class="sets-badge rehab">3〜4×10〜12</span></td><td class="reps-text">手腕可自由旋转，减少肘关节固定压力</td></tr>
+        </table>
+
+        <div class="section-title rehab-color">每次训练后的肘部护理</div>
+        <table class="exercise-table">
+          <tr><th>方法</th><th>时间</th><th>说明</th></tr>
+          <tr><td><div class="exercise-name">冰敷</div></td><td class="reps-text">训练后10〜15分钟</td><td class="reps-text">用毛巾包住冰袋敷在鹰嘴处，减少炎症</td></tr>
+          <tr><td><div class="exercise-name">三头肌拉伸</div></td><td class="reps-text">每次30秒 × 3组</td><td class="reps-text">手臂伸过头顶，用另一只手轻压肘关节</td></tr>
+          <tr><td><div class="exercise-name">佩戴护肘</div></td><td class="reps-text">训练全程</td><td class="reps-text">提供支撑和保温，减少炎症加重风险</td></tr>
+        </table>
+        <div class="tip-box warning"><strong>康复时间线：</strong>轻度肌腱炎通常需要4〜8周的动作调整才能明显改善。不要因为"今天感觉好一点"就立刻回到原来的训练方式，循序渐进是关键。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 饮食计划 -->
+  <div class="panel" id="panel-diet">
+    <div class="macro-grid">
+      <div class="macro-card protein">
+        <div class="m-value">168g</div><div class="m-unit">蛋白质</div>
+        <div class="m-kcal">672 kcal</div><div class="m-label">体重 × 2g/kg</div>
+      </div>
+      <div class="macro-card carb">
+        <div class="m-value">210g</div><div class="m-unit">碳水化合物</div>
+        <div class="m-kcal">840 kcal</div><div class="m-label">训练前后集中摄入</div>
+      </div>
+      <div class="macro-card fat">
+        <div class="m-value">65g</div><div class="m-unit">脂肪</div>
+        <div class="m-kcal">585 kcal</div><div class="m-label">以健康脂肪为主</div>
+      </div>
+    </div>
+    <div class="tip-box green" style="margin-bottom:16px;">
+      <strong>总热量约2100 kcal</strong>（维持热量约2500〜2600 kcal，每日赤字约400〜500 kcal）。目标是每月减少0.5〜1kg体脂，同时最大程度保留肌肉。
+    </div>
+
+    <div class="meal-card open">
+      <div class="meal-header" onclick="toggleMeal(this)">
+        <div class="meal-time-badge">起床后30分钟</div>
+        <div class="meal-info"><h3>第一餐 · 早餐</h3><p>启动代谢，补充夜间消耗</p></div>
+        <div class="meal-macros"><span class="m-p">蛋白质 48g</span><span class="m-c">碳水 42g</span><span class="m-f">脂肪 16g</span></div>
+        <div class="meal-toggle">▼</div>
+      </div>
+      <div class="meal-body">
+        <div class="food-item"><div><div class="food-name">燕麦片（干重）</div><div class="food-amount">50g</div></div><div class="food-macros"><div class="fc">碳水 30g</div><div class="fp">蛋白质 6g</div></div></div>
+        <div class="food-item"><div><div class="food-name">全蛋</div><div class="food-amount">2个（约100g）</div></div><div class="food-macros"><div class="fp">蛋白质 13g</div><div class="ff">脂肪 10g</div></div></div>
+        <div class="food-item"><div><div class="food-name">蛋白粉（乳清）</div><div class="food-amount">1勺（约25g粉）</div></div><div class="food-macros"><div class="fp">蛋白质 22g</div><div class="fc">碳水 3g</div></div></div>
+        <div class="food-item"><div><div class="food-name">花生酱</div><div class="food-amount">10g（减半）</div></div><div class="food-macros"><div class="ff">脂肪 5g</div><div class="fp">蛋白质 3g</div></div></div>
+        <div class="food-item"><div><div class="food-name">蓝莓 / 香蕉（选一）</div><div class="food-amount">50〜80g</div></div><div class="food-macros"><div class="fc">碳水 10g</div></div></div>
+        <div class="tip-box green"><strong>改进点：</strong>花生酱减至10g，加入2个鸡蛋大幅提升早餐蛋白质。</div>
+      </div>
+    </div>
+
+    <div class="meal-card open">
+      <div class="meal-header" onclick="toggleMeal(this)">
+        <div class="meal-time-badge">午餐（12〜13点）</div>
+        <div class="meal-info"><h3>第二餐 · 午餐</h3><p>最大一餐，碳水重点补充</p></div>
+        <div class="meal-macros"><span class="m-p">蛋白质 50g</span><span class="m-c">碳水 70g</span><span class="m-f">脂肪 10g</span></div>
+        <div class="meal-toggle">▼</div>
+      </div>
+      <div class="meal-body">
+        <div class="food-item"><div><div class="food-name">白米饭（熟重）</div><div class="food-amount">150g</div></div><div class="food-macros"><div class="fc">碳水 55g</div><div class="fp">蛋白质 3g</div></div></div>
+        <div class="food-item"><div><div class="food-name">鸡胸肉（生重）</div><div class="food-amount">200g</div></div><div class="food-macros"><div class="fp">蛋白质 44g</div><div class="ff">脂肪 4g</div></div></div>
+        <div class="food-item"><div><div class="food-name">蔬菜（西兰花、菠菜等）</div><div class="food-amount">150g以上，不限量</div></div><div class="food-macros"><div class="fc">碳水 8g</div></div></div>
+        <div class="food-item"><div><div class="food-name">橄榄油（炒菜用）</div><div class="food-amount">5g（约1茶匙）</div></div><div class="food-macros"><div class="ff">脂肪 5g</div></div></div>
+        <div class="tip-box green"><strong>改进点：</strong>避免素面，米饭150g熟重。鸡胸肉务必称量。</div>
+      </div>
+    </div>
+
+    <div class="meal-card open">
+      <div class="meal-header" onclick="toggleMeal(this)">
+        <div class="meal-time-badge">训练前1小时</div>
+        <div class="meal-info"><h3>第三餐 · 训练前加餐</h3><p>为训练提供燃料</p></div>
+        <div class="meal-macros"><span class="m-p">蛋白质 25g</span><span class="m-c">碳水 30g</span><span class="m-f">脂肪 3g</span></div>
+        <div class="meal-toggle">▼</div>
+      </div>
+      <div class="meal-body">
+        <div class="food-item"><div><div class="food-name">蛋白粉（乳清）</div><div class="food-amount">1勺（约25g粉）</div></div><div class="food-macros"><div class="fp">蛋白质 22g</div><div class="fc">碳水 3g</div></div></div>
+        <div class="food-item"><div><div class="food-name">香蕉</div><div class="food-amount">1根（约100g）</div></div><div class="food-macros"><div class="fc">碳水 23g</div></div></div>
+        <div class="tip-box green"><strong>改进点：</strong>将"蛋白粉+面包"改为"蛋白粉+香蕉"，更适合训练前快速供能。</div>
+      </div>
+    </div>
+
+    <div class="meal-card open">
+      <div class="meal-header" onclick="toggleMeal(this)">
+        <div class="meal-time-badge">晚餐（19〜20点）</div>
+        <div class="meal-info"><h3>第四餐 · 晚餐</h3><p>减少碳水，以蛋白质为主</p></div>
+        <div class="meal-macros"><span class="m-p">蛋白质 50g</span><span class="m-c">碳水 40g</span><span class="m-f">脂肪 15g</span></div>
+        <div class="meal-toggle">▼</div>
+      </div>
+      <div class="meal-body">
+        <div class="food-item"><div><div class="food-name">白米饭（熟重）</div><div class="food-amount">100g（比午餐少）</div></div><div class="food-macros"><div class="fc">碳水 37g</div><div class="fp">蛋白质 2g</div></div></div>
+        <div class="food-item"><div><div class="food-name">鸡胸肉 或 鱼（生重）</div><div class="food-amount">200g</div></div><div class="food-macros"><div class="fp">蛋白质 44g</div><div class="ff">脂肪 4g</div></div></div>
+        <div class="food-item"><div><div class="food-name">蔬菜</div><div class="food-amount">150g以上，不限量</div></div><div class="food-macros"><div class="fc">碳水 8g</div></div></div>
+        <div class="tip-box green"><strong>关于中餐外卖：</strong>建议每周最多3次，其余天改为自制清淡餐或超市熟食。晚餐碳水比午餐少，有助于减脂。</div>
+      </div>
+    </div>
+
+    <div class="daily-total">
+      <div class="total-item"><div class="tv" style="color:#e94560;">~168g</div><div class="tl">蛋白质</div></div>
+      <div class="total-item"><div class="tv" style="color:#f0a030;">~210g</div><div class="tl">碳水</div></div>
+      <div class="total-item"><div class="tv" style="color:#5090e0;">~65g</div><div class="tl">脂肪</div></div>
+      <div class="total-item"><div class="tv" style="color:#4caf7d;">~2100</div><div class="tl">总热量 kcal</div></div>
+    </div>
+    <div class="tip-box" style="margin-top:16px;">
+      <strong>最优先做的一件事：</strong>买一个厨房秤，开始称量食物。不称量就无法真正管理摄入，这是减脂成功的最关键工具。
+    </div>
+  </div>
+
+  <!-- 补剂 -->
+  <div class="panel" id="panel-supps">
+    <div class="tip-box green" style="margin-bottom:16px;">
+      <strong>核心原则：</strong>补剂只是锦上添花，饮食和训练才是基础。优先级高的先买，其余的慢慢添加。
+    </div>
+    <div class="supp-grid">
+      <div class="supp-card"><div class="s-priority priority-high">★★★ 必备</div><h4>🥛 乳清蛋白粉</h4><div class="s-dose">每日1〜2勺</div><div class="s-note">已在使用，继续保持。仅靠食物摄取168g蛋白质难度大。</div></div>
+      <div class="supp-card"><div class="s-priority priority-high">★★★ 立即添加</div><h4>💪 肌酸（Creatine）</h4><div class="s-dose">每日3〜5g，任意时间</div><div class="s-note">最有效的补剂之一。提升力量、肌肉量和训练表现，直接混入蛋白粉即可。</div></div>
+      <div class="supp-card"><div class="s-priority priority-high">★★★ 肘部康复期推荐</div><h4>🦴 胶原蛋白 + 维生素C</h4><div class="s-dose">训练前1小时服用，胶原蛋白10〜15g + VC 200mg</div><div class="s-note">有研究表明可促进肌腱胶原合成，对肌腱炎康复有辅助作用。</div></div>
+      <div class="supp-card"><div class="s-priority priority-mid">★★ 建议添加</div><h4>☀️ 维生素D</h4><div class="s-dose">每日2000〜4000 IU，随餐</div><div class="s-note">与睾酮水平、免疫功能、骨骼健康密切相关。室内工作者尤其需要。</div></div>
+      <div class="supp-card"><div class="s-priority priority-mid">★★ 建议添加</div><h4>🌙 镁（Magnesium）</h4><div class="s-dose">每日200〜400mg，睡前</div><div class="s-note">改善睡眠质量、促进肌肉恢复。高强度训练者容易缺乏。</div></div>
+      <div class="supp-card"><div class="s-priority priority-mid">★★</div><h4>🐟 Omega-3（鱼油）</h4><div class="s-dose">每日2000mg，随餐</div><div class="s-note">抑制炎症、促进恢复，对肌腱炎也有一定消炎辅助效果。</div></div>
+    </div>
+    <div class="tip-box" style="margin-top:4px;">
+      <strong>推荐添加顺序：</strong>肌酸 → 胶原蛋白+VC（肘部康复期）→ 维生素D → 镁 → Omega-3
+    </div>
+  </div>
+
+  <!-- 路线图 -->
+  <div class="panel" id="panel-phases">
+    <div class="progress-item">
+      <h4>📍 当前位置 → 目标</h4>
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+        <span style="font-size:13px;color:#888;">体脂率</span>
+        <span style="font-size:13px;color:#e94560;">17〜20% → 6〜8%</span>
+      </div>
+      <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:35%"></div></div>
+      <div class="progress-labels"><span>现在</span><span>比赛状态</span></div>
+      <div style="margin-top:16px;display:flex;justify-content:space-around;flex-wrap:wrap;gap:12px;">
+        <div style="text-align:center;"><div style="font-size:20px;font-weight:700;color:#e94560;">84kg</div><div style="font-size:11px;color:#666;">当前体重</div></div>
+        <div style="text-align:center;"><div style="font-size:20px;font-weight:700;color:#a0b4c8;">→</div></div>
+        <div style="text-align:center;"><div style="font-size:20px;font-weight:700;color:#90c890;">72〜76kg</div><div style="font-size:11px;color:#666;">目标体重</div></div>
+      </div>
+    </div>
+    <ul class="phase-list">
+      <li><div class="phase-num">1</div><div class="phase-text"><h5>阶段一：建立习惯（第1〜2个月）</h5><p>就医检查肘部。买厨房秤开始称量食物。养成每日蛋白质168g、热量2100kcal的饮食习惯。添加肌酸 + 胶原蛋白。将有氧增至每周4次。</p></div></li>
+      <li><div class="phase-num">2</div><div class="phase-text"><h5>阶段二：加速减脂（第3〜8个月）</h5><p>保持每月减少0.5〜1kg体脂。记录训练重量监控体能。肘部好转后逐步恢复杠铃卧推，但动作要重新调整。每2〜3个月安排一次减量周。</p></div></li>
+      <li><div class="phase-num">3</div><div class="phase-text"><h5>阶段三：赛前精细调整（第9〜14个月）</h5><p>体脂率低于10%后进入深度减脂阶段。开始练习规定姿势（Pose）。赛前2〜3个月进入Peaking巅峰期。</p></div></li>
+      <li><div class="phase-num">4</div><div class="phase-text"><h5>阶段四：登台参赛（目标：12〜18个月后）</h5><p>参加NPCJ或JBBF健体公开组，或Masters（35岁以上）组。首次参赛的目标就是"站上舞台"。</p></div></li>
+    </ul>
+    <div class="tip-box" style="margin-top:16px;"><strong>每2〜3个月安排一次减量周（Deload）：</strong>将训练重量降至平时的60〜70%，让身体充分恢复。长期坚持比短期冲刺更重要。</div>
+  </div>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
